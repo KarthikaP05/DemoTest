@@ -1,0 +1,16 @@
+package com.opencart.stepdefinition;
+
+import org.openqa.selenium.WebDriver;
+
+import com.opencart.runner.TestRunner;
+
+import Cucumber.BaseClass;
+
+public class Login_Stepdefinition extends BaseClass  {
+	
+	public static WebDriver driver = TestRunner.driver;
+	
+	Login_Page lp = new Login_Page(driver);
+	
+		}
+}

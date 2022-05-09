@@ -1,0 +1,50 @@
+package com.opencart.stepdefinition;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.WebDriver;
+import com.opencart.pom.Login_Page;
+import com.opencart.runner.TestRunner;
+import Cucumber.BaseClass;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Login_Stepdefinition extends BaseClass  {
+	
+	public static WebDriver driver = TestRunner.driver;
+	
+	Login_Page lp = new Login_Page(driver);
+	
+	@Given("User launches the OpenCart application")
+	public void user_launches_the_open_cart_application()  {
+		 geturl("https://demo.opencart.com/");
+	}
+	
+	@When("User clicks the My Account")
+	public void user_clicks_the_my_account() {
+		conceptClick(lp.getAccount());
+	}
+	
+	@When("Users clicks the login option")
+	public void users_clicks_the_login_option() {
+	    conceptClick(lp.getLogin());
+	}
+	
+	@Then("It navigates to the login page of the application")
+	public void it_navigates_to_the_login_page_of_the_application() {
+		assertTrue(driver.getCurrentUrl().endsWith("com/index.php?route=account/login"));
+		System.out.println("Successfully navigate to the login page");
+	}
+	
+	@Then("User entrs the valid username and password")
+	public void user_entrs_the_valid_username_and_password() {
+		sendKey(lp.getEmail(), "nkarthikaprabhakar235@gmail.com");
+		sendKey(lp.getPassword(), "Hai2020");
+	}
+	
+	@Then("User clicks the login button")
+	public void user_clicks_the_login_button() {
+		conceptClick(lp.getLogin_Button());
+	}
+}

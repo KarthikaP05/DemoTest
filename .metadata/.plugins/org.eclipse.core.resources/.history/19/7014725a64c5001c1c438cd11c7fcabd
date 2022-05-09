@@ -1,0 +1,9 @@
+Feature: Login Functionality
+
+Scenario: User wants to login the WebPage
+ Given User launches the OpenCart application
+ When User clicks the My Account
+ And Users clicks the login option
+ Then  It navigates to the login page of the application
+ And User entrs the valid username and password
+ And User clicks the login button

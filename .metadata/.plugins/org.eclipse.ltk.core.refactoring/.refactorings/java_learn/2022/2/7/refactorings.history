@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;selection_stmnts.If_else_oprtrs&apos; to &apos;If_elif_else_add&apos;&#x0D;&#x0A;- Original project: &apos;java_learn&apos;&#x0D;&#x0A;- Original element: &apos;selection_stmnts.If_else_oprtrs&apos;&#x0D;&#x0A;- Renamed element: &apos;selection_stmnts.If_elif_else_add&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;If_else_oprtrs&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;selection_stmnts{If_else_oprtrs.java[If_else_oprtrs" matchStrategy="1" name="If_elif_else_add" qualified="false" references="true" similarDeclarations="false" stamp="1644491011400" textual="false" version="1.0"/>
+</session>

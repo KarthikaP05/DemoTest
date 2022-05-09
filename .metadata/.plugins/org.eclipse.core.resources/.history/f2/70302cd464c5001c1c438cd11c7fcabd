@@ -1,0 +1,18 @@
+package com.opencart.stepdefinition;
+
+import static org.testng.Assert.assertTrue;
+
+import org.openqa.selenium.WebDriver;
+import com.opencart.pom.Login_Page;
+import com.opencart.runner.TestRunner;
+import Cucumber.BaseClass;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Login_Stepdefinition extends BaseClass  {
+	
+	public static WebDriver driver = TestRunner.driver;
+	
+	
+}
